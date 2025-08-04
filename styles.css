@@ -1,41 +1,75 @@
+/* styles.css */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
 header {
-  background-color: #fff;
+  background-color: #0d6efd;
   padding: 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.tagline {
-  color: #777;
-}
-
-.hero {
-  padding: 40px;
-  background: #e9f2ff;
+  color: white;
   text-align: center;
 }
 
-.btn {
-  background: #007bff;
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
   color: white;
-  padding: 10px 20px;
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 50px;
+  text-align: center;
+  background-color: #e0f0ff;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #0d6efd;
+  border-radius: 5px;
   text-decoration: none;
 }
 
-form input, select {
-  display: block;
-  margin: 10px 0;
-  padding: 8px;
-  width: 300px;
+.btn:hover {
+  background-color: #084298;
 }
 
-form button {
-  background: #007bff;
-  color: white;
-  padding: 10px 20px;
+.how-it-works {
+  padding: 30px 50px;
 }
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
