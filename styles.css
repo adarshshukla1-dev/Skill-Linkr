@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tagline {
+  color: #777;
+}
+
+.hero {
+  padding: 40px;
+  background: #e9f2ff;
+  text-align: center;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+form input, select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 300px;
+}
+
+form button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
