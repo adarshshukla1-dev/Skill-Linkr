@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Company Dashboard – Skill Linkr</title>
+  <meta charset="UTF-8" />
+  <title>Company Dashboard - Skill Linkr</title>
   <style>
-    body { font-family: Arial; margin: 0; background: #f6f7fb; }
-    header { background: #ff5722; color: white; padding: 20px; text-align: center; }
-    nav { background: white; padding: 10px 20px; display: flex; justify-content: space-between; }
-    main { padding: 30px; }
-    .btn-post {
-      background: #007bff; color: white; padding: 10px 20px;
-      text-decoration: none; border-radius: 6px;
+    body {
+      font-family: Arial;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
     }
-    .project {
-      background: white; padding: 20px; margin-top: 20px;
-      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    header {
+      background: #28a745;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    .section {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .btn {
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #1e7e34;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>Skill Linkr – Company Dashboard</h2>
+    <h1>Company Dashboard</h1>
   </header>
-  <nav>
-    <div>🏢 Welcome, Company</div>
-    <div><a href="index.html">Logout</a></div>
-  </nav>
-  <main>
-    <a class="btn-post" href="post-project.html">+ Post New Project</a>
 
-    <div class="project">
-      <h4>Open Project: Social Media Poster Design</h4>
-      <p>Need 5 static social media posts for a campaign. ₹1000 budget.</p>
-      <small>3 Applications received</small>
-    </div>
+  <div class="section">
+    <h2>Post New Project</h2>
+    <button class="btn" onclick="alert('Coming Soon: Project Posting Form')">Post a Project</button>
+  </div>
 
-    <div class="project">
-      <h4>Open Project: Python Script for CSV Parsing</h4>
-      <p>Simple script to filter and export CSV data. ₹800</p>
-      <small>1 Application received</small>
-    </div>
-  </main>
+  <div class="section">
+    <h2>Ongoing Projects</h2>
+    <p>No active hires yet.</p>
+  </div>
+
+  <div class="section">
+    <h2>Company Profile</h2>
+    <p>Company Name: XYZ Pvt Ltd<br>Email: xyz@example.com</p>
+  </div>
 </body>
 </html>
