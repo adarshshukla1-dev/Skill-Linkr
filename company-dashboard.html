@@ -2,16 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Company Dashboard - Skilllinkr</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Company Dashboard – Skill Linkr</title>
+  <style>
+    body { font-family: Arial; margin: 0; background: #f6f7fb; }
+    header { background: #ff5722; color: white; padding: 20px; text-align: center; }
+    nav { background: white; padding: 10px 20px; display: flex; justify-content: space-between; }
+    main { padding: 30px; }
+    .btn-post {
+      background: #007bff; color: white; padding: 10px 20px;
+      text-decoration: none; border-radius: 6px;
+    }
+    .project {
+      background: white; padding: 20px; margin-top: 20px;
+      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-  <h2>Welcome, Company</h2>
-  <a href="post-project.html">Post a New Project</a>
-  <h3>My Projects</h3>
-  <ul>
-    <li>Website UI Design – 12 proposals</li>
-    <li>Video Editing for Instagram – 5 proposals</li>
-  </ul>
+  <header>
+    <h2>Skill Linkr – Company Dashboard</h2>
+  </header>
+  <nav>
+    <div>🏢 Welcome, Company</div>
+    <div><a href="index.html">Logout</a></div>
+  </nav>
+  <main>
+    <a class="btn-post" href="post-project.html">+ Post New Project</a>
+
+    <div class="project">
+      <h4>Open Project: Social Media Poster Design</h4>
+      <p>Need 5 static social media posts for a campaign. ₹1000 budget.</p>
+      <small>3 Applications received</small>
+    </div>
+
+    <div class="project">
+      <h4>Open Project: Python Script for CSV Parsing</h4>
+      <p>Simple script to filter and export CSV data. ₹800</p>
+      <small>1 Application received</small>
+    </div>
+  </main>
 </body>
 </html>
