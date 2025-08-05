@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Student Signup – Skill Linkr</title>
-  <style>
-    body { font-family: Arial; background: #eef2f3; display: flex; flex-direction: column; align-items: center; padding-top: 50px; }
-    form { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    input { display: block; width: 100%; padding: 10px; margin-bottom: 20px; font-size: 16px; }
-    button { padding: 12px 25px; background: #007bff; color: white; border: none; font-size: 16px; border-radius: 5px; }
-    a { display: block; margin-top: 10px; color: #28a745; }
-  </style>
+  <title>Student Signup</title>
 </head>
 <body>
-  <h2>Student Sign Up</h2>
-  <form>
-    <input type="text" placeholder="Full Name" required />
-    <input type="email" placeholder="College Email" required />
-    <input type="text" placeholder="College Name" required />
-    <input type="password" placeholder="Create Password" required />
-    <button type="submit">Sign Up</button>
-    <a href="student-login.html">Already have an account? Login</a>
+  <h2>Student Signup</h2>
+  <form onsubmit="studentSignup(event)">
+    <input type="email" id="studentEmail" placeholder="Email" required />
+    <input type="password" id="studentPassword" placeholder="Password" required />
+    <button type="submit">Signup</button>
   </form>
+
+  <script>
+    function studentSignup(e) {
+      e.preventDefault();
+      const email = document.getElementById('studentEmail').value;
+      const password = document.getElementById('studentPassword').value;
+
+      localStorage.setItem('student_' + email, password);
+      alert('Signup successful! Please login.');
+      window.location.href = 'student-login.html';
+    }
+  </script>
 </body>
 </html>
