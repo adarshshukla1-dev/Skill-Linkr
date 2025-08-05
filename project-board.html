@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Board – Skill Linkr</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    .project {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+  </style>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT_ID.appspot.com",
+      messagingSenderId: "YOUR_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+  </script>
+</head>
+<body>
+  <h2>Live Project Board</h2>
+  <div id="projectList"></div>
+
+  <script>
+    const projectList = document.getElementById('projectList');
+
+    db.ref('projects').on('value', (snapshot) => {
+      projectList.innerHTML = ''; // Clear existing
+      const data = snapshot.val();
+      if (data) {
+        Object.keys(data).forEach(key => {
+          const project = data[key];
+          const card = document.createElement('div');
+          card.className = 'project';
+          card.innerHTML = `
+            <h3>${project.title}</h3>
+            <p><strong>Description:</strong> ${project.description}</p>
+            <p><strong>Skills Required:</strong> ${project.skills}</p>
+            <p><strong>Budget:</strong> ₹${project.budget}</p>
+            <p><em>Posted on: ${new Date(project.createdAt).toLocaleString()}</em></p>
+          `;
+          projectList.appendChild(card);
+        });
+      } else {
+        projectList.innerHTML = '<p>No projects posted yet.</p>';
+      }
+    });
+  </script>
+</body>
+</html>
