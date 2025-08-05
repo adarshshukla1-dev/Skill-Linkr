@@ -1,75 +1,56 @@
-/* styles.css */
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #212529;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-header {
-  background-color: #0d6efd;
-  padding: 20px;
-  color: white;
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.tagline {
-  font-style: italic;
-  font-size: 1.1em;
-  margin-top: 5px;
+button {
+  width: 100%;
+  background-color: #2d89e5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-nav {
+button:hover {
+  background-color: #1a5fb4;
+}
+
+p {
+  text-align: center;
   margin-top: 15px;
 }
-
-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: underline;
-}
-
-.hero {
-  padding: 50px;
-  text-align: center;
-  background-color: #e0f0ff;
-}
-
-.hero h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin-top: 20px;
-  font-size: 1em;
-  color: white;
-  background-color: #0d6efd;
-  border-radius: 5px;
+a {
+  color: #2d89e5;
   text-decoration: none;
 }
 
-.btn:hover {
-  background-color: #084298;
-}
-
-.how-it-works {
-  padding: 30px 50px;
-}
-
-footer {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9em;
-}
 
