@@ -38,32 +38,3 @@
     a { display: block; margin-top: 10px; color: #28a745; }
   </style>
 </head>
-<body>
-  <h2>Student Sign Up</h2>
-  <form>
-    <input type="text" placeholder="Full Name" required />
-    <input type="email" placeholder="College Email" required />
-    <input type="text" placeholder="College Name" required />
-    <input type="password" placeholder="Create Password" required />
-    <button type="submit">Sign Up</button>
-    <a href="student-login.html">Already have an account? Login</a>
-  </form>
-</body>
-</html>
-<form onsubmit="signup(event)">
-</form>
-
-<script>
-  function signup(e) {
-    e.preventDefault();
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then(userCredential => {
-        alert("Signup successful!");
-        window.location.href = "student-dashboard.html";
-      })
-      .catch(error => {
-        alert(error.message);
-      });
-  }
-</script>
-
