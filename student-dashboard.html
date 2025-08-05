@@ -2,21 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Student Dashboard - Skilllinkr</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Student Dashboard – Skill Linkr</title>
+  <style>
+    body { font-family: Arial; margin: 0; background: #f0f2f5; }
+    header { background: #007bff; color: white; padding: 20px; text-align: center; }
+    nav { background: white; padding: 10px 20px; display: flex; justify-content: space-between; }
+    main { padding: 30px; }
+    .project-card {
+      background: white; padding: 20px; margin-bottom: 20px;
+      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .apply-btn {
+      background: #28a745; color: white; padding: 8px 15px;
+      border: none; border-radius: 5px; cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h2>Welcome, [Student Name]</h2>
-  <h3>Available Gigs</h3>
-  <ul>
-    <li>
-      <strong>Logo Design</strong> - ₹1500  
-      <button>Apply</button>
-    </li>
-    <li>
-      <strong>Social Media Editor</strong> - ₹2500  
-      <button>Apply</button>
-    </li>
-  </ul>
+  <header>
+    <h2>Skill Linkr – Student Dashboard</h2>
+  </header>
+  <nav>
+    <div>👋 Hello, Student</div>
+    <div><a href="index.html">Logout</a></div>
+  </nav>
+  <main>
+    <h3>Available Projects</h3>
+
+    <div class="project-card">
+      <h4>Logo Design for Startup</h4>
+      <p>Need a creative student to design a logo for a fintech startup. Budget: ₹1500</p>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <div class="project-card">
+      <h4>React Website UI Update</h4>
+      <p>Revamp existing UI for a food delivery site. Must know React. Budget: ₹3000</p>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+  </main>
 </body>
 </html>
