@@ -55,6 +55,52 @@
   </style>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilllinkr - Earn While You Learn</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 flex items-center">
+                <span>Skilllinkr</span>
+                <span class="text-sm ml-2 bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full">BETA</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-indigo-600">How It Works</a>
+                <a href="#market" class="text-gray-600 hover:text-indigo-600">Market</a>
+                <a href="#team" class="text-gray-600 hover:text-indigo-600">Team</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 hidden md:block">Login</a>
+                <a href="#" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
   <h1>Welcome to Skill Linkr</h1>
   <p>Earn While You Learn 🚀</p>
 
@@ -65,6 +111,305 @@
   <a href="company-dashboard.html"><button class="btn">Company Dashboard</button></a>
   <a href="projects.html"><button class="btn">Project Board</button></a>
      <a href="project-board.html"><button class="btn">All Project</button></a>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Earn While You Learn</h1>
+                <p class="text-xl mb-8">India's first freelancing platform exclusively for college students to showcase their skills and earn money.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Get Started</a>
+                    <a href="#features" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400" alt="College students collaborating on laptops with happy expressions, working on creative projects in a modern campus environment" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 bg-white" id="problem">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">The Problem We Solve</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl stat-card">
+                    <div class="text-indigo-600 text-5xl mb-4"><i class="fas fa-users-slash"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Skills With No Reach</h3>
+                    <p class="text-gray-600">Students have talents but struggle to find clients for their skills like design, coding, and content creation.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl stat-card">
+                    <div class="text-indigo-600 text-5xl mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Too Much Competition</h3>
+                    <p class="text-gray-600">Established platforms have excessive competition, making it hard for new freelancers to get projects.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl stat-card">
+                    <div class="text-indigo-600 text-5xl mb-4"><i class="fas fa-search-dollar"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Businesses Need Talent</h3>
+                    <p class="text-gray-600">Small businesses want affordable yet reliable talent but can't find verified student freelancers easily.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-16 bg-gray-50" id="features">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Solution</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm feature-card transition">
+                    <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-graduate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Verified Student Network</h3>
+                    <p class="text-gray-600">Only college students can join (verified through college IDs) creating a trusted community.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm feature-card transition">
+                    <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Direct Connections</h3>
+                    <p class="text-gray-600">Clients can directly hire students without middlemen, ensuring fair pricing for both sides.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm feature-card transition">
+                    <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Secure Payments</h3>
+                    <p class="text-gray-600">Escrow payment system protects both students and clients with transparent money flow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-white" id="how-it-works">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">How Skilllinkr Works</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">1</div>
+                    </div>
+                    <h3 class="font-semibold mb-2">Create Profile</h3>
+                    <p class="text-gray-600 text-sm">Students verify with college ID and showcase skills</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">2</div>
+                    </div>
+                    <h3 class="font-semibold mb-2">Find Projects</h3>
+                    <p class="text-gray-600 text-sm">Clients post projects and browse student portfolios</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">3</div>
+                    </div>
+                    <h3 class="font-semibold mb-2">Get Hired</h3>
+                    <p class="text-gray-600 text-sm">Direct communication and agreement on terms</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">4</div>
+                    </div>
+                    <h3 class="font-semibold mb-2">Earn Money</h3>
+                    <p class="text-gray-600 text-sm">Secure payment upon project completion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Opportunity -->
+    <section class="py-16 bg-indigo-600 text-white" id="market">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Market Opportunity</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-5xl font-bold mb-2">50M+</h3>
+                    <p class="text-indigo-100">College Students in India</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl font-bold mb-2">₹5000 Cr+</h3>
+                    <p class="text-indigo-100">Freelance Market Size</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl font-bold mb-2">0</h3>
+                    <p class="text-indigo-100">Student-Focused Platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Business Model</h2>
+            <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">10% Commission</h3>
+                    <p class="text-gray-600">Small percentage from each completed project</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Premium Profiles</h3>
+                    <p class="text-gray-600">Students can pay for better visibility</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 md:col-span-2">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Business Subscriptions</h3>
+                    <p class="text-gray-600">Companies pay for priority access to top talent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50" id="team">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <img src="https://placehold.co/200x200" alt="Adarsh Shukla, Founder of Skilllinkr - A young entrepreneur with glasses, smiling confidently in formal attire" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-1">Adarsh Shukla</h3>
+                    <p class="text-indigo-600 mb-4">Founder</p>
+                    <p class="text-gray-600">Also runs Thumb&Reel Studio and JEE Mantra with deep experience in student communities.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <img src="https://placehold.co/200x200" alt="Team member - A diverse group of young professionals working together in a tech startup environment" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-1">[Other Members]</h3>
+                    <p class="text-indigo-600 mb-4">Tech, Content & Creative</p>
+                    <p class="text-gray-600">Talented team with expertise in development, design, marketing and student engagement.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <img src="https://placehold.co/200x200" alt="President Name - A professional in formal wear representing NEC leadership with approachable demeanor" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-1">[President's Name]</h3>
+                    <p class="text-indigo-600 mb-4">NEC President</p>
+                    <p class="text-gray-600">Providing strategic coordination and institutional support for the platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Roadmap</h2>
+            <div class="relative">
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-indigo-100 transform -translate-x-1/2"></div>
+                <div class="space-y-8 md:space-y-16">
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12">
+                            <div class="bg-indigo-100 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-indigo-600">Beta Launch</h3>
+                                <p class="text-gray-600">Initial launch in 2-3 colleges to gather feedback and refine the platform.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-indigo-600 text-white absolute left-1/2 transform -translate-x-1/2">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12">
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-indigo-600 text-white absolute left-1/2 transform -translate-x-1/2">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-indigo-100 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-indigo-600">MVP Development</h3>
+                                <p class="text-gray-600">Build web and mobile apps with core features based on student feedback.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12">
+                            <div class="bg-indigo-100 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-indigo-600">All-India Launch</h3>
+                                <p class="text-gray-600">Expand to colleges nationwide with marketing campaigns and partnerships.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-indigo-600 text-white absolute left-1/2 transform -translate-x-1/2">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-indigo-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Earn While You Learn?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join India's first student-exclusive freelancing platform and start monetizing your skills today.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition">Student Sign Up</a>
+                <a href="#" class="bg-indigo-600 border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-indigo-800 transition">Client Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white mb-4">Skilllinkr</h3>
+                    <p class="max-w-xs">India's first student-exclusive freelancing platform to help you earn while you learn.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Company</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white">About</a></li>
+                            <li><a href="#" class="hover:text-white">Careers</a></li>
+                            <li><a href="#" class="hover:text-white">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white">Help Center</a></li>
+                            <li><a href="#" class="hover:text-white">Privacy</a></li>
+                            <li><a href="#" class="hover:text-white">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-semibold mb-4">Connect</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Skilllinkr. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu would be added here in a complete implementation
+    </script>
+</body>
+</html>
+
 </body>
 </html>
 
