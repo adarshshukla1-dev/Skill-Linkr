@@ -26,6 +26,23 @@
   const auth = firebase.auth();
   const database = firebase.database();
 </script>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.x.x/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.x.x/firebase-auth.js";
+
+const app = initializeApp({
+  apiKey: "AIzaSyATx5Ve7vEWJk4p78rEWfF-zyg_oZYwUEQ",
+  authDomain: "YOUR_skill-linkr.firebaseapp.com",
+  // other config settings...
+});
+const auth = getAuth(app);
+
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    console.log("Signed up:", userCredential.user.uid);
+  })
+  .catch((error) => {
+    console.error("Signup failed:", error.code, error.message);
+  });
 
 <head>
   <meta charset="UTF-8">
