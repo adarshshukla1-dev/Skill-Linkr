@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Firebase SDKs -->
+    <!-- Firebase SDKs -->
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
@@ -20,26 +20,32 @@
     messagingSenderId: "76624345347",
     appId: "1:76624345347:web:0102665c8092f6e4e9d136"
   };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const database = firebase.database();
+</script>
 <head>
   <meta charset="UTF-8">
-  <title>Student Signup – Skill Linkr</title>
+  <title>Company Signup – Skill Linkr</title>
   <style>
     body { font-family: Arial; background: #FFDAB9; display: flex; flex-direction: column; align-items: center; padding-top: 50px; }
     form { background: orange; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     input { display: block; width: 100%; padding: 10px; margin-bottom: 20px; font-size: 16px; }
-    button { padding: 12px 25px; background: #007bff; color: white; border: none; font-size: 16px; border-radius: 5px; }
+    button { padding: 12px 25px; background: #ff5722; color: white; border: none; font-size: 16px; border-radius: 5px; }
     a { display: block; margin-top: 10px; color: #28a745; }
   </style>
 </head>
 <body>
   <h2>Student Sign Up</h2>
   <form>
-    <input type="text" placeholder="Full Name" required />
-    <input type="email" placeholder="College Email" required />
-    <input type="text" placeholder="College Name" required />
+    <input type="text" placeholder="Student Name" required />
+    <input type="email" placeholder="Email" required />
+    <input type="college" placeholder="College Name" required />
     <input type="password" placeholder="Create Password" required />
     <button type="submit">Sign Up</button>
-    <a href="student-login.html">Already have an account? Login</a>
+    <a href="company-login.html">Already have an account? Login</a>
   </form>
 </body>
 </html>
