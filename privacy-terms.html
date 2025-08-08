@@ -1,88 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Terms of Service | Skill Linkr</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f9fa;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-        }
-        p {
-            color: #555;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy & Terms — Skill Linkr</title>
+  <meta name="description" content="Privacy Policy and Terms of Service for Skill Linkr" />
+
+  <style>
+    :root{
+      --bg: #eef2f3;      
+      --card: #ffffff;
+      --muted: #6b6b6b;
+      --accent: #ff7a59;  
+      --primary: #0b6b6a; 
+      --radius: 14px;
+      --glass: rgba(255,255,255,0.6);
+      --max-width: 1000px;
+      --shadow: 0 6px 20px rgba(11,107,106,0.08);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, var(--bg), #ffffff 60%);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px 20px;
+      color:#233;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:20px;
+    }
+    .logo{
+      width:58px;height:58px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:var(--shadow);
+    }
+    header .title{display:flex;flex-direction:column}
+    header h1{margin:0;font-size:18px;color:var(--primary)}
+    header p{margin:0;color:var(--muted);font-size:13px}
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;
+    }
+
+    nav.toc{display:flex;gap:8px;flex-wrap:wrap}
+    nav.toc a{
+      display:inline-block;padding:8px 12px;border-radius:999px;text-decoration:none;font-weight:600;font-size:13px;color:var(--primary);
+      border:1px solid rgba(11,107,106,0.08);background:linear-gradient(180deg, rgba(11,107,106,0.03), transparent);
+    }
+
+    .meta{color:var(--muted);font-size:13px}
+
+    main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:10px}
+
+    article{padding-right:6px}
+    h2{color:var(--primary);margin-top:20px}
+    h3{margin-top:14px;color:#222}
+    p{color:var(--muted);line-height:1.7}
+    ul{color:var(--muted);margin-left:18px}
+
+    aside{
+      background:linear-gradient(180deg,#fbfbfb,var(--glass));padding:18px;border-radius:12px;border:1px solid rgba(0,0,0,0.03);
+      height:max-content;align-self:start
+    }
+    aside h4{margin:0 0 8px 0;color:var(--primary)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--primary),#0f9e9d);color:white}
+    .btn-ghost{border:1px solid rgba(11,107,106,0.08);color:var(--primary);background:transparent}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){
+      main{grid-template-columns:1fr}
+      aside{order:2}
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <div class="logo">SL</div>
+      <div class="title">
+        <h1>Skill Linkr — Privacy Policy & Terms</h1>
+        <p class="meta">Last updated: August 8, 2025 · Lightweight, legal-ready draft</p>
+      </div>
+    </header>
 
-<div class="container">
-    <h1>Privacy Policy</h1>
-    <p>Last updated: August 2025</p>
-    <p>Skill Linkr values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our platform.</p>
-    
-    <h2>Information We Collect</h2>
-    <ul>
-        <li>Personal details like name, email, and phone number during registration.</li>
-        <li>Account login details for authentication.</li>
-        <li>Project information posted by companies or students.</li>
-    </ul>
+    <section class="card">
+      <div class="topbar">
+        <nav class="toc" aria-label="Quick links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#info-we-collect">Information We Collect</a>
+          <a href="#use-of-info">How We Use Info</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-    <h2>How We Use Your Information</h2>
-    <ul>
-        <li>To create and manage your account.</li>
-        <li>To connect students with companies for projects.</li>
-        <li>To improve our platform and services.</li>
-    </ul>
+        <div style="text-align:right">
+          <span class="meta">For legal review — recommended</span>
+        </div>
+      </div>
 
-    <h2>Data Protection</h2>
-    <p>We implement security measures to protect your data, but we cannot guarantee 100% security of information transmitted online.</p>
+      <main>
+        <article>
+          <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>Welcome to <strong>Skill Linkr</strong>. This Privacy Policy explains what data we collect, why we collect it, how we use it, and the choices you have. This is a concise, developer-friendly version designed for immediate use. Please consult a lawyer to produce a final version tailored to your jurisdiction.</p>
 
-    <h2>Contact Us</h2>
-    <p>If you have any questions, please email us at <a href="mailto:adarshshuklakota18@gmail.com">adarshshuklakota18@gmail.com</a>.</p>
+            <h3 id="info-we-collect">1. Information We Collect</h3>
+            <ul>
+              <li><strong>Account information:</strong> name, email address, phone (optional), college/company name, role (student/company), profile details you add.</li>
+              <li><strong>Project data:</strong> titles, descriptions, skills required, deadlines, attachments submitted by companies or students.</li>
+              <li><strong>Authentication data:</strong> password hashes or OAuth tokens (we never store plain-text passwords).</li>
+              <li><strong>Usage data:</strong> logs, analytics, IP address, device & browser metadata for improving the service and security.</li>
+            </ul>
 
-    <hr>
+            <h3 id="use-of-info">2. How We Use Your Information</h3>
+            <ul>
+              <li>To create and manage your account and profile.</li>
+              <li>To enable project posting, discovery, and communication between students and companies.</li>
+              <li>To send transactional emails (password reset, notifications) and occasional product updates (you can opt out of marketing emails).</li>
+              <li>To improve and secure the platform (bug fixing, analytics, abuse detection).</li>
+            </ul>
 
-    <h1>Terms of Service</h1>
-    <p>By using Skill Linkr, you agree to the following terms:</p>
-    
-    <h2>Eligibility</h2>
-    <p>You must be at least 18 years old or have permission from a guardian to use this platform.</p>
+            <h3>3. Legal Basis & Retention</h3>
+            <p>We process personal data based on your consent and our legitimate interests (running and improving the product). We retain account information for as long as your account exists and usage/analytics data for up to 24 months unless otherwise required.</p>
 
-    <h2>User Responsibilities</h2>
-    <ul>
-        <li>Provide accurate and truthful information.</li>
-        <li>Do not post or share illegal, offensive, or harmful content.</li>
-        <li>Respect other users and their privacy.</li>
-    </ul>
+            <h3>4. Data Sharing & Third Parties</h3>
+            <p>We do not sell your personal data. We may share data with:</p>
+            <ul>
+              <li>Service providers (hosting, analytics, email delivery) under contract with us.</li>
+              <li>When required by law (court orders) or to protect our rights or users' safety.</li>
+            </ul>
 
-    <h2>Platform Usage</h2>
-    <p>Skill Linkr provides a connection platform between students and companies. We are not responsible for any agreements, payments, or disputes between users.</p>
+            <h3>5. Security</h3>
+            <p>We implement industry-standard security measures (HTTPS, salted password hashing, access controls). However, no online service can be 100% secure — please avoid sharing highly sensitive personal information on the platform.</p>
 
-    <h2>Termination</h2>
-    <p>We reserve the right to suspend or terminate accounts violating our policies.</p>
+            <h3>6. Your Choices</h3>
+            <p>You can update or delete your profile data from account settings. For marketing emails, use the unsubscribe link in emails or contact us directly.</p>
 
-    <h2>Changes to Terms</h2>
-    <p>We may update these terms at any time. Continued use of the platform means you accept the new terms.</p>
-</div>
+            <h3 id="cookie">7. Cookies & Tracking</h3>
+            <p>We use cookies for session management and basic analytics. You can block cookies via your browser but some features might stop working.</p>
 
+            <h3 id="contact">8. Contact</h3>
+            <p>If you have questions or requests about your personal data, email us at <a href="adarshshuklakota18@gmail.com">adarshshuklakota18@gmail.com</a>. For legal requests, include a clear description and verification of identity.</p>
+          </section>
+
+          <section id="terms">
+            <h2>Terms of Service</h2>
+            <p>By using Skill Linkr ("Service"), you agree to these Terms. If you do not agree, do not use the platform.</p>
+
+            <h3>1. Eligibility</h3>
+            <p>You must be at least 18 years old or use Skill Linkr under guidance of a guardian where local law permits.</p>
+
+            <h3>2. Account Responsibilities</h3>
+            <ul>
+              <li>Keep your account information accurate. You are responsible for activity under your account.</li>
+              <li>Use strong passwords. We will never ask for your plain-text password via email.</li>
+            </ul>
+
+            <h3>3. Acceptable Use</h3>
+            <p>Do not post illegal, hateful, harassing, or infringing content. Respect others' privacy and intellectual property. Violations may result in content removal or account termination.</p>
+
+            <h3>4. Platform Role & Liability</h3>
+            <p>Skill Linkr is a matchmaking and communication platform connecting students and companies. We do not employ students nor do we verify company offers. Any agreements, internships, or payments between users are solely between those parties. We are not liable for disputes arising from user interactions.</p>
+
+            <h3>5. Termination</h3>
+            <p>We reserve the right to suspend or terminate accounts that breach these Terms or for other legitimate reasons. Upon termination, your public content may remain unless you request removal.</p>
+
+            <h3>6. Changes</h3>
+            <p>We may modify these Terms and Privacy Policy. When material changes occur, we will notify users by email or a notice on the platform. Continued use constitutes acceptance of the updated terms.</p>
+
+            <h3>7. Governing Law</h3>
+            <p>These Terms are governed by the laws applicable in the company's registered jurisdiction. For specific legal advice, consult a lawyer.</p>
+
+            <h3>8. Contact</h3>
+            <p>Questions about these Terms? Email <a href="mailto:adarshshuklakota18@gmail.com">adarshshuklakota18@gmail.com</a>.</p>
+          </section>
+
+          <footer>
+            <p>Need a more detailed, jurisdiction-specific legal draft (for investors or enterprise customers)? Consider hiring a legal advisor — I can help draft a more detailed version if you tell me the company registration jurisdiction.</p>
+          </footer>
+        </article>
+
+        <aside>
+          <h4>Quick actions</h4>
+          <p style="margin:0 0 12px 0;color:var(--muted)">Use these to copy or publish quickly.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn btn-primary" href="#contact" onclick="copyToClipboard()">Copy Email</a>
+            <a class="btn btn-ghost" href="#privacy">Jump to Privacy</a>
+          </div>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #f0f0f0" />
+
+          <h4>Customizable fields</h4>
+          <ul style="margin:6px 0;color:var(--muted)">
+            <li>Company registered jurisdiction</li>
+            <li>Retention periods</li>
+            <li>Third-party service list (hosting, analytics)</li>
+          </ul>
+
+          <div style="margin-top:10px;font-size:13px;color:var(--muted)">
+            <strong>Tip:</strong> Replace <code>adarshshukla@gmail.com</code> with your official support email before publishing.
+          </div>
+        </aside>
+      </main>
+    </section>
+
+    <div style="height:10px"></div>
+    <div style="text-align:center;color:var(--muted);font-size:13px">© Skill Linkr — Built with ❤️ · <span id="year"></span></div>
+  </div>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function copyToClipboard(){
+      navigator.clipboard && navigator.clipboard.writeText('adarshshuklakota18@gmail.com')
+        .then(()=> alert('Email copied to clipboard'))
+        .catch(()=> alert('Copy failed — please copy manually'));
+    }
+  </script>
 </body>
 </html>
