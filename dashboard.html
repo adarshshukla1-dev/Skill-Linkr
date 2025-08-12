@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Linkr - Dashboard</title>
+</head>
+<body>
+  <h2>Welcome to Dashboard</h2>
+  <button id="logoutBtn">Logout</button>
+
+  <script type="module">
+    import { supabase } from "./supabaseClient.js";
+
+    // Protect route
+    const { data } = await supabase.auth.getUser();
+    if (!data.user) {
+      window.location.href = "login.html";
+    }
+
+    // Logout
+    document.getElementById("logoutBtn").addEventListener("click", async () => {
+      await supabase.auth.signOut();
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
